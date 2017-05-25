@@ -21,3 +21,11 @@ Trong trường hợp bất khả kháng thì sử dụng ``vi`` thì một số
      # hoặc
      
      vi /etc/sysconfig/network-scripts/ifcfg-em3 # mở trình chỉnh sửa vi để cấu hình card em3
+
+## Route
+
+Để thêm vào một route cho 1 gateway, sử dụng lệnh ``ip route add``
+
+    ip route add 192.168.101.0/24 via 192.168.10.1
+    
+Lệnh trên sẽ đưa các truy cập vào gw 192.168.101.1 thông qua gw 192.168.10.1
