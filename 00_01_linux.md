@@ -40,3 +40,27 @@ Sau khi server được cấp ổ cứng mới, các thao tác để máy nhận
  - Mount ổ cứng vào một thư mục để sử dụng ``mount /path/new/pdisk /path/directory``
  - Khai báo mount cho lần khởi động tiếp theo, mở file ``/etc/fstab`` thêm dòng ``/path/new/pdisk /path/directory xfs defaults  0 0``
    
+## Chia sẻ thư mục thông qua NFS (CentOS7)
+
+Cài đặt và chạy các dịch vụ cần thiết
+
+    yum install nfs-utils nfs-utils-lib
+    systemctl enable nfs 
+    systemctl start rpcbind
+    systemctl start nfs
+    
+Để chia sẽ thư mục nào thì ta khai báo ở file ``/etc/exports``, ví dụ muốn chia sẽ thư mục ``/data01`` cho máy có địa chỉ ``100.100.20.57`` ta khai báo như sau
+
+    nano /etc/exports
+    # nhập khai báo mới
+    /data01      100.100.20.57(rw,sync,no_root_squash)
+
+Nếu muốn chia sẽ cho các máy khai trong lớp 100.100.20.0/24 ta thay đổi địa chỉ ip
+
+    /data01      100.100.20.0/24(rw,sync,no_root_squash)
+
+Sau đó hoàn tất việc chia sẽ bằng lệnh
+
+    exportfs -a
+    
+Do chia sẽ qua mạng, nên chú ý firewall, SELinux... 
