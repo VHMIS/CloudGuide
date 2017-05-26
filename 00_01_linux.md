@@ -29,3 +29,14 @@ Trong trường hợp bất khả kháng thì sử dụng ``vi`` thì một số
     ip route add 192.168.101.0/24 via 192.168.10.1
     
 Lệnh trên sẽ đưa các truy cập vào gw 192.168.101.1 thông qua gw 192.168.10.1
+
+## Thêm ổ cứng mới
+
+Sau khi server được cấp ổ cứng mới, các thao tác để máy nhận diện và sử dụng ổ cứng mới gồm có phần vùng, định dạng, và mount
+
+ - Sử dụng lệnh ``fdisk -l`` để xem tên ổ cứng mới thêm vào
+ - Phân vùng ổ cứng bằng lệnh ``fdisk /path/new/disk``
+ - Format ổ cứng sau khi phân vùng ``mkfs.xfs /path/new/pdisk`` cho định dạng xfs hoặc ``mkfs.ext4 /path/new/pdisk`` cho định dạng ext4
+ - Mount ổ cứng vào một thư mục để sử dụng ``mount /path/new/pdisk /path/directory``
+ - Khai báo mount cho lần khởi động tiếp theo, mở file ``/etc/fstab`` thêm dòng ``/path/new/pdisk /path/directory xfs defaults  0 0``
+   
