@@ -9,18 +9,48 @@ Trong trường hợp bất khả kháng thì sử dụng ``vi`` thì một số
  - Chỉnh sửa:
  - Lưu file và thoát: ``:x``
  
- ## Cấu hình mạng (CentOS, Redhat, Ubuntu)
+## Cấu hình mạng
+
+### CentOS, Redhat...
  
- Cấu hình mạng thông qua các file cấu hình nằm trong thư mục ``/etc/sysconfig/network-scripts``,
- các file cấu hình cho từng card mạng có dạng ``ifcfg-[tên card mạng]``
- 
-     cd /etc/sysconfig/network-scripts
-     cat ifcfg-p3p1 # xem cấu hình card p3p1
-     nano ifcfg-p3p1 # mở trình chỉnh sửa để cấu hình card p3p1
-     
-     # hoặc
-     
-     vi /etc/sysconfig/network-scripts/ifcfg-em3 # mở trình chỉnh sửa vi để cấu hình card em3
+Cấu hình mạng thông qua các file cấu hình nằm trong thư mục ``/etc/sysconfig/network-scripts``,
+các file cấu hình cho từng card mạng có dạng ``ifcfg-[tên card mạng]``
+
+    cd /etc/sysconfig/network-scripts
+    cat ifcfg-p3p1 # xem cấu hình card p3p1
+    nano ifcfg-p3p1 # mở trình chỉnh sửa để cấu hình card p3p1
+    
+    # hoặc
+    
+    vi /etc/sysconfig/network-scripts/ifcfg-em3 # mở trình chỉnh sửa vi để cấu hình card em3
+
+Do hệ thống không dùng DHCP, nên file cấu hình mạng cho card có dạng đơn giản sau
+
+    DEVICE=[tên card mạng]
+    BOOTPROTO=static
+    ONBOOT=yes
+    TYPE=Ethernet
+    IPADDR=[địa chỉ IP]
+    NETMASK=[địa chỉ Netmask]
+    
+    # nếu sử dụng card này là default gateway thì thêm địa chỉ gateway
+    GATEWAY=[địa chỉ Gateway]
+
+## Ubuntu, Debian...
+
+Cấu hình mạng thông qua các file cấu hình  ``/etc/network/interface``, file này có dạng như sau
+
+    # The loopback network interface
+    auto lo
+    iface lo inet loopback
+
+    # card mạng ens192
+    auto ens192
+    iface ens192 inet static
+      address 222.255.128.147
+      netmask 255.255.255.240
+      gateway 222.255.128.145
+      dns-nameservers 8.8.8.8
 
 ## Route
 
