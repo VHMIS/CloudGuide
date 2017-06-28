@@ -11,6 +11,10 @@ Trong trường hợp bất khả kháng thì sử dụng ``vi`` thì một số
  
 ## Cấu hình mạng
 
+### Chung
+
+Hệ thống không sử DHCP, toàn bộ hướng dẫn dưới đây sử dụng IP tĩnh (static IP)
+
 ### CentOS, Redhat...
  
 Cấu hình mạng thông qua các file cấu hình nằm trong thư mục ``/etc/sysconfig/network-scripts``,
@@ -24,7 +28,7 @@ các file cấu hình cho từng card mạng có dạng ``ifcfg-[tên card mạn
     
     vi /etc/sysconfig/network-scripts/ifcfg-em3 # mở trình chỉnh sửa vi để cấu hình card em3
 
-Do hệ thống không dùng DHCP, nên file cấu hình mạng cho card có dạng đơn giản sau
+File cấu hình mạng cho card có nội dung sau
 
     DEVICE=[tên card mạng]
     BOOTPROTO=static
@@ -35,8 +39,10 @@ Do hệ thống không dùng DHCP, nên file cấu hình mạng cho card có d�
     
     # nếu sử dụng card này là default gateway thì thêm địa chỉ gateway
     GATEWAY=[địa chỉ Gateway]
+    
+    # nếu có khai báo DNS
 
-## Ubuntu, Debian...
+### Ubuntu, Debian...
 
 Cấu hình mạng thông qua các file cấu hình  ``/etc/network/interface``, file này có dạng như sau
 
@@ -44,12 +50,16 @@ Cấu hình mạng thông qua các file cấu hình  ``/etc/network/interface``,
     auto lo
     iface lo inet loopback
 
-    # card mạng ens192
+    # card mạng ens192, static ip
     auto ens192
-    iface ens192 inet static
+    iface ens192 inet staticip
       address 222.255.128.147
       netmask 255.255.255.240
+      
+      # nếu sử dụng card này là default gateway thì thêm địa chỉ gateway
       gateway 222.255.128.145
+      
+      # dns server
       dns-nameservers 8.8.8.8
 
 ## Route
