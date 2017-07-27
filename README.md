@@ -10,6 +10,7 @@ Hướng dẫn vận hành hệ thống máy chủ Cloud
  - [ ] 01 - Tổng quan hệ thống
  - [ ] 02 - SAN
  - [ ] 03 - Ovirt
+   - [ ] 03.01 - [Sử dụng oVirt](03_01_su_dung.md)
  - [ ] 04 - VMWare
  - [ ] xx -
    - [ ] xx.xx - [Các nội dung chưa được phân mục](xx_xx_unclassified.md)
