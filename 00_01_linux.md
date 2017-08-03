@@ -104,3 +104,29 @@ Sau đó hoàn tất việc chia sẽ bằng lệnh
     exportfs -a
     
 Do chia sẽ qua mạng, nên chú ý firewall, SELinux... 
+
+## Thay đổi Timezone
+
+Đối với Ubuntu thực hiện lệnh sau
+
+    sudo dpkg-reconfigure tzdata
+
+Bảng lựa chọn Timezone của Ubuntu xuất hiện, chọn châu lục, chọn thành phố cần thiết lập Timezone.
+
+Đối với CentOS 7, thực hiện lệnh sau
+
+    sudo timedatectl set-timezone [time_zone]
+    
+    # ví dụ sudo timedatectl set-timezone America/Detroit
+
+Trong CentOS 7, để xem danh sách Timezone, thực hiện lệnh sau
+
+    timedatectl list-timezones
+    
+    # kết hợp grep để hạn chế kết quả, ví dụ để liệt kê các timezone ở Châu Á
+    timedatectl list-timezones | grep Asia
+
+Để kiểm tra lại kết quả, có thể thực hiện 2 lệnh sau
+
+    date
+    ls -l /etc/localtime
