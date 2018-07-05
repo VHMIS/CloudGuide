@@ -15,6 +15,6 @@ oVirt CS máy 64, theo dõi khởi động lại, fstab một số ổ cứng t�
 
 ``sudo mkfs.xfs /dev/sdb1``
 
-``sudo /dev/sdb1 /opt``
+``sudo mount /dev/sdb1 /opt``
 
 ``sudo nano /etc/fstab`` -> add line ``/dev/sdb1 /opt xfs defaults 0 0``
