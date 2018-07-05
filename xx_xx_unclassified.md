@@ -8,3 +8,13 @@ oVirt CS máy 64, theo dõi khởi động lại, fstab một số ổ cứng t�
     ---> xóa các dòng /ect/fstab
     ---> khởi động
     ---> mount lại bình thường mount /dev/mapper/.... /....
+
+## Cấu hình ổ cứng cho các server SCamp 2018
+
+``sudo fdisk /dev/sdb`` -> n -> enter -> enter ... -> w -> enter
+
+``sudo mkfs.xfs /dev/sdb1``
+
+``sudo /dev/sdb1 /opt``
+
+``sudo nano /etc/fstab`` -> add line ``/dev/sdb1 /opt xfs defaults 0 0``
