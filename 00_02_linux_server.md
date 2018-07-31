@@ -19,3 +19,31 @@ Ubuntu 18.04
  - https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-18-04
  - https://www.server-world.info/en/note?os=Ubuntu_18.04&p=ntp&f=1
  - https://linoxide.com/linux-how-to/synchronize-time-ntp-server-ubuntu/
+
+## DNS
+
+CentOS 7
+ - https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-centos-7
+ 
+Ubuntu 16.04
+ - https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-16-04
+
+Ubuntu 18.04
+ - https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04
+ 
+## Apache Web Server và LAMP (Apache + MySQL + PHP)
+
+CentOS 7
+ - LAMP https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7
+
+Ubuntu 18.04
+ - Apache https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart
+ - LAMP https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+ 
+ ## Nginx Web Server và LEMP (Nginx + MySQL + PHP)
+ 
+ CentOS 7
+  - https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7
+  
+ Ubuntu 18.04
+  - https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
