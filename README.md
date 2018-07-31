@@ -17,5 +17,5 @@ Hướng dẫn vận hành hệ thống máy chủ Cloud
    - [ ] 05.02 - Quản trị server Web (Apache, PHP)
    - [ ] 05.03 - Quản trị server CSDL như MariaDB, MySQL
    - [ ] 05.04 - Quản trị server FTP
- - [ ] xx -
-   - [ ] xx.xx - [Các nội dung chưa được phân mục](xx_xx_unclassified.md)
+ - [ ] xx - Khác
+   - [ ] xx.01 - [Các nội dung chưa được phân mục](xx_xx_unclassified.md)
