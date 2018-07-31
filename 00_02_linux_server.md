@@ -40,10 +40,17 @@ Ubuntu 18.04
  - Apache https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart
  - LAMP https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
  
- ## Nginx Web Server và LEMP (Nginx + MySQL + PHP)
+## Nginx Web Server và LEMP (Nginx + MySQL + PHP)
  
- CentOS 7
-  - https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7
+CentOS 7
+ - https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7
   
- Ubuntu 18.04
-  - https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
+Ubuntu 18.04
+ - https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-ubuntu-18-04
+
+## HAProxy
+
+ - Giới thiệu https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts
+ - Hướng dẫn sử dụng HAProxy https://www.digitalocean.com/community/tutorials/how-to-use-haproxy-as-a-layer-4-load-balancer-for-wordpress-application-servers-on-ubuntu-14-04#install-haproxy
+
+Ngoài ra HAProxy còn để dùng cho mục đích route, tiết kiệm IP, xem chi tiết ở hướng dẫn vận hành server HAProxy
