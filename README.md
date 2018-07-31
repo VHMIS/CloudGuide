@@ -1,4 +1,4 @@
-# CloudGuide
+# Cloud Guide
 Hướng dẫn vận hành hệ thống máy chủ Cloud
 
 ## Danh mục
