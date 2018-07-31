@@ -14,6 +14,11 @@
 
 ## Port mặc định
 
+Với các máy chủ thông ra môi trường internet
+
+ - Phải thay đổi port mặc định của dịch vụ SSH, không sử dụng port 22
+ 
+
 ## Firewall cứng
 
 Đối với các dịch vụ sử dụng public IP, đi ra môi trường Internet, ngoài mở port trên firewall HĐH, còn phải mở port trên firewall cứng của hệ thống mạng.
