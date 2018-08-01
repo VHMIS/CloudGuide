@@ -54,3 +54,14 @@ Ubuntu 18.04
  - Hướng dẫn sử dụng HAProxy https://www.digitalocean.com/community/tutorials/how-to-use-haproxy-as-a-layer-4-load-balancer-for-wordpress-application-servers-on-ubuntu-14-04#install-haproxy
 
 Ngoài ra HAProxy còn để dùng cho mục đích route, tiết kiệm IP, xem chi tiết ở hướng dẫn vận hành server HAProxy
+
+## FTP
+
+CentOS
+ -
+ 
+Ubuntu 16.04
+ - https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-18-04
+
+Ubuntu 16.04
+ - https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-for-a-user-s-directory-on-ubuntu-16-04
