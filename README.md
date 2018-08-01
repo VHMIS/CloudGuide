@@ -13,9 +13,9 @@ Hướng dẫn vận hành hệ thống máy chủ Cloud
    - [ ] 03.01 - [Sử dụng oVirt](03_01_su_dung.md)
  - [ ] 04 - VMWare
  - [ ] 05 - Quản trị server
-   - [ ] 05.01 - Quản trị server DNS
+   - [ ] 05.01 - [Quản trị server DNS](05_01_dns.md)
    - [ ] 05.02 - Quản trị server Web (Apache, PHP)
    - [ ] 05.03 - Quản trị server CSDL như MariaDB, MySQL
-   - [ ] 05.04 - Quản trị server FTP
+   - [ ] 05.04 - [Quản trị server FTP](05_04_ftp.md)
  - [ ] xx - Khác
    - [ ] xx.01 - [Các nội dung chưa được phân mục](xx_xx_unclassified.md)
