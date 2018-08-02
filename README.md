@@ -14,8 +14,17 @@ Hướng dẫn vận hành hệ thống máy chủ Cloud
  - [ ] 04 - VMWare
  - [ ] 05 - Quản trị server
    - [ ] 05.01 - [Quản trị server DNS](05_01_dns.md)
-   - [ ] 05.02 - Quản trị server Web (Apache, PHP)
-   - [ ] 05.03 - Quản trị server CSDL như MariaDB, MySQL
+   - [ ] 05.02 - [Quản trị server Proxy](05_02_proxy.md)
+   - [ ] 05.03 - [Quản trị server Web trường](05_03_web.md)
    - [ ] 05.04 - [Quản trị server FTP](05_04_ftp.md)
+   - [ ] 05.05 - [Quản trị server Lab Ngoại ngữ](05_05_smartclass.md)
+   - [ ] 05.06 - [Quản trị server Edusoft + Eduweb](05_06_edu.md)
+   - [ ] 05.07 - [Quản trị server Trắc nghiệm](05_07_testpro.md)
+   - [ ] 05.08 - [Quản trị server Domain](05_08_domain.md)
+   - [ ] 05.09 - [Quản trị server CL](05_09_cl.md)
+   - [ ] 05.10 - [Quản trị server Esys](05_10_esys.md)
+   - [ ] 05.11 - [Quản trị server Vhmis](05_11_vhmis.md)
+   - [ ] 05.12 - [Quản trị server Giám sát](05_12_nagios.md)
+   - [ ] 05.13 - [Quản trị server Bill Gates](05_13_billgates.md)
  - [ ] xx - Khác
    - [ ] xx.01 - [Các nội dung chưa được phân mục](xx_xx_unclassified.md)
