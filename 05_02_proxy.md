@@ -10,9 +10,9 @@ Hiện tại Proxy có thể sử dụng cho các dịch vụ mạng thông qua 
 
 Gồm 1 server đặt trên hệ thống NW (VMware)
 
-| HĐH | Phần mềm | IP, account |
-| --- | --- | --- |
-| CentOS 7 | HAProxy | Liên lạc với quản trị |
+| HĐH | Phần mềm | IP | IP, account |
+| --- | --- | --- | --- |
+| CentOS 7 | HAProxy | 1 IP public (default gateway) và 1 IP nội bộ (liên lạc với các server nội bộ khác) | Liên lạc với quản trị |
 
 [Quá trình cài đặt, cũng như giải thích cơ bản về HAProxy tham khảo ở link này](00_02_linux_server.md#haproxy)
 
