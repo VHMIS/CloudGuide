@@ -26,5 +26,7 @@ Hướng dẫn vận hành hệ thống máy chủ Cloud
    - [ ] 05.11 - [Quản trị server Vhmis](05_11_vhmis.md)
    - [ ] 05.12 - [Quản trị server Giám sát](05_12_nagios.md)
    - [ ] 05.13 - [Quản trị server Bill Gates](05_13_billgates.md)
+   - [ ] 05.14 - [Quản trị server KOHA](05_14_koha.md)
+   - [ ] 05.15 - [Quản trị server Thư viện số](05_15_tvs.md)
  - [ ] xx - Khác
    - [ ] xx.01 - [Các nội dung chưa được phân mục](xx_xx_unclassified.md)
