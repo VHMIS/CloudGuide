@@ -19,7 +19,7 @@ Hướng dẫn vận hành hệ thống máy chủ Cloud
    - [ ] 05.04 - [Quản trị server FTP](05_04_ftp.md)
    - [ ] 05.05 - [Quản trị server Lab Ngoại ngữ](05_05_smartclass.md)
    - [ ] 05.06 - [Quản trị server Edusoft + Eduweb](05_06_edu.md)
-   - [ ] 05.07 - [Quản trị server Trắc nghiệm](05_07_testpro.md)
+   - [ ] 05.07 - [Quản trị server Trắc nghiệm](05_06_edu.md)
    - [ ] 05.08 - [Quản trị server Domain](05_08_domain.md)
    - [ ] 05.09 - [Quản trị server CL](05_09_cl.md)
    - [ ] 05.10 - [Quản trị server Esys](05_10_esys.md)
